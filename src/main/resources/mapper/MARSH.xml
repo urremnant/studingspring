@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="marsh">
+
+    <!-- ssm정보 조회 -->
+    <select id="selectSSMinfo" resultType="hashmap">
+        <![CDATA[        
+        SELECT 
+            M.ssm_code,
+	        M.cate_code,
+	        M.company_name,
+	        M.company_num,
+	        I.address,
+	        I.post_no,
+	        I.mng_name,
+	        I.phone_number 
+		FROM 
+		    ssm_management M,ssm_metainfo I
+		    WHERE 
+		        M.ssm_code=I.ssm_code
+		    AND
+		        M.use_yn=0
+		    AND
+		        I.use_yn=0
+        ]]>
+    </select>   
+</mapper>
