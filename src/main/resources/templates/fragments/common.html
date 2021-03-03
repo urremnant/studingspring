@@ -17,6 +17,7 @@
         rel="stylesheet">
     <link rel="stylesheet" th:href="@{/lib/startbootstrap-sb-admin-2-gh-pages/css/sb-admin-2.css}"/>
     <link th:href="@{/lib/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/dataTables.bootstrap4.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.6.0/css/bootstrap.css}"/>
 </head>
 
 <body>
@@ -372,7 +373,7 @@
     <!-- 공통사용 modal-->
     <div class="modal fade" id="commonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" th:fragment="commonModal">
         <div class="modal-dialog" role="document">
-             <!-- 
+             
             <div class="modal-content">
                
                 <div class="modal-header">
@@ -388,14 +389,16 @@
                 </div>
               
             </div>
-              -->
+            
         </div>
     </div>
     <th:block th:fragment="common_js">
+	    
 	    <script type="text/javascript" th:src="@{/lib/startbootstrap-sb-admin-2-gh-pages/vendor/jquery/jquery.js}"></script>
 	    <script type="text/javascript" th:src="@{/lib/startbootstrap-sb-admin-2-gh-pages/vendor/jquery-easing/jquery.easing.js}"></script>
 	    <script type="text/javascript" th:src="@{/lib/startbootstrap-sb-admin-2-gh-pages/js/sb-admin-2.js}"></script>
 	    <script type="text/javascript" th:src="@{/lib/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/jquery.dataTables.js}"></script>
 	    <script type="text/javascript" th:src="@{/lib/startbootstrap-sb-admin-2-gh-pages/vendor/datatables/dataTables.bootstrap4.js}"></script>
+	    <script type="text/javascript" th:src="@{/webjars/bootstrap/4.6.0/js/bootstrap.min.js}"></script>
     </th:block>    
 </body>

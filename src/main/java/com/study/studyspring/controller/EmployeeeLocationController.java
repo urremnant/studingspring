@@ -16,4 +16,10 @@ public class EmployeeeLocationController{
 		
 		return "/hire/employee";
 	}
+	
+	@GetMapping("/hire/modal/RegisterSSM")
+	public String RegisterSSM() {
+		
+		return "/hire/modal/RegisterSSM";
+	}
 }
