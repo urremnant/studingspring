@@ -22,4 +22,6 @@ public class EmployeeeLocationController{
 		
 		return "/hire/modal/RegisterSSM";
 	}
+	
+	
 }
